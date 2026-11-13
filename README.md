@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2c3e50">
+  <title>국가공무원인재개발원 | NHI KOREA - 주요업무 및 찾아오는 길</title>
+  <meta name="description" content="대한민국 인사혁신처 소속 국가공무원인재개발원(NHI)의 공식 종합 안내 사이트입니다. 주요 핵심 업무와 진천 본원, 과천 분원 찾아오시는 길을 안내합니다.">
+  
+  <!-- bhban.kr 시그니처 폰트: Roboto Slab (제목) + Raleway / Pretendard (본문) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+  <!-- Font Awesome 6 (bhban.kr 스타일 아이콘) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      --primary-color: #2c3e50;       /* bhban.kr 다크 네이비/슬레이트 */
+      --secondary-color: #e74c3c;     /* bhban.kr 레드 포인트 하이라이트 */
+      --accent-color: #3498db;        /* bhban.kr 블루 엑센트 */
+      --bg-color: #f8f9fa;            /* 깔끔한 미색 배경 */
+      --card-bg: #ffffff;
+      --text-color: #333333;
+      --text-muted: #666666;
+      --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 10px 15px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 20px 25px rgba(0, 0, 0, 0.12);
+      --radius-md: 14px;
+      --font-heading: 'Roboto Slab', 'Pretendard', serif;
+      --font-body: 'Raleway', 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+      --nav-height: 70px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--text-color);
+      background-color: var(--bg-color);
+      line-height: 1.65;
+      padding-top: var(--nav-height);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.3s ease;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-heading);
+      color: var(--primary-color);
+      letter-spacing: -0.02em;
+    }
+
+    /* ========================================================
+       1. 네비게이션 바 (bhban.kr 스타일: 블러 글래스모피즘 + 세련된 메뉴)
+       ======================================================== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--nav-height);
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: var(--shadow-sm);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2.5rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      font-size: 1.35rem;
+      color: var(--primary-color);
+    }
+
+    .brand-emblem {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: var(--primary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 10px rgba(44, 62, 80, 0.25);
+    }
+
+    .brand-text-sub {
+      display: block;
+      font-size: 0.68rem;
+      letter-spacing: 1.5px;
+      color: var(--secondary-color);
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .brand-text-main {
+      font-size: 1.15rem;
+      color: var(--primary-color);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-weight: 600;
+      color: var(--text-color);
+      font-size: 0.95rem;
+      position: relative;
+      padding: 6px 0;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--secondary-color);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--secondary-color);
+      transition: width 0.3s;
+    }
+
+    .nav-link:hover::after, .nav-link.active::after {
+      width: 100%;
+    }
+
+    .btn-contact {
+      background: var(--secondary-color);
+      color: white !important;
+      padding: 9px 20px;
+      border-radius: 25px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+    }
+
+    .btn-contact:hover {
+      background: #c0392b;
+      transform: translateY(-2px);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.6rem;
+      color: var(--primary-color);
+      cursor: pointer;
+    }
+
+    /* ========================================================
+       2. 히어로 섹션 (bhban.kr 시그니처: 어두운 배경 + 원형 프로필 + 통계 배너)
+       ======================================================== */
+    .hero {
+      min-height: calc(90vh + var(--nav-height));
+      margin-top: calc(-1 * var(--nav-height));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(rgba(26, 36, 47, 0.85), rgba(44, 62, 80, 0.92)), 
+                  url('images/korean_lecture_hall.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: calc(10vh + var(--nav-height)) 1.5rem 5rem;
+      position: relative;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    /* bhban.kr의 원형 프로필 사진 스타일 흉내 (공부하는 한국 청년 공무원 이미지) */
+    .profile-img-container {
+      position: relative;
+      margin-bottom: 1.8rem;
+    }
+
+    .profile-img {
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.35);
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.04);
+    }
+
+    .profile-badge {
+      position: absolute;
+      bottom: 6px;
+      right: 6px;
+      background: var(--secondary-color);
+      color: white;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid white;
+      font-size: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .hero-title {
+      font-size: 3.2rem;
+      font-weight: 800;
+      margin-bottom: 0.6rem;
+      color: white;
+      line-height: 1.2;
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin-bottom: 1.8rem;
+      opacity: 0.92;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-socials {
+      display: flex;
+      justify-content: center;
+      gap: 1.6rem;
+      margin-bottom: 2rem;
+    }
+
+    .social-icon {
+      font-size: 1.5rem;
+      color: white;
+      background: rgba(255, 255, 255, 0.12);
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.3s;
+    }
+
+    .social-icon:hover {
+      transform: translateY(-4px);
+      background: var(--secondary-color);
+      color: white;
+      border-color: var(--secondary-color);
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 2.2rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-hero {
+      padding: 13px 28px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-hero.btn-primary {
+      background: var(--secondary-color);
+      color: white;
+      box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+    }
+
+    .btn-hero.btn-primary:hover {
+      background: #c0392b;
+      transform: translateY(-2px);
+    }
+
+    .btn-hero.btn-secondary {
+      background: rgba(255, 255, 255, 0.15);
+      color: white;
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-hero.btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: translateY(-2px);
+    }
+
+    /* bhban.kr의 시그니처 글래스모피즘 Stats Banner */
+    .hero-stats-banner {
+      display: flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 18px;
+      padding: 14px 20px;
+      margin-top: 0.5rem;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .stat-item {
+      display: flex;
+      align-items: center;
+      padding: 6px 20px;
+      color: white;
+      transition: all 0.2s;
+      border-radius: 10px;
+    }
+
+    .stat-item:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateY(-2px);
+      color: white;
+    }
+
+    .stat-icon {
+      font-size: 1.7rem;
+      margin-right: 14px;
+      color: var(--accent-color);
+    }
+
+    .stat-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      line-height: 1.25;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      opacity: 0.8;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .stat-value {
+      font-size: 1.35rem;
+      font-weight: 700;
+      font-family: var(--font-heading);
+    }
+
+    .stat-divider {
+      width: 1px;
+      height: 38px;
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    /* ========================================================
+       3. 메인 콘텐츠 섹션 공통 스타일
+       ======================================================== */
+    .section-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 5.5rem 1.5rem;
+    }
+
+    .group-header {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .group-tag {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--secondary-color);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 0.5rem;
+    }
+
+    .group-title {
+      font-size: 2.3rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      position: relative;
+      display: inline-block;
+      padding-bottom: 12px;
+    }
+
+    .group-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: var(--secondary-color);
+      border-radius: 2px;
+    }
+
+    .group-desc {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      margin-top: 1rem;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ========================================================
+       4. 협력기관 로고 배너 (파트너 그리드)
+       ======================================================== */
+    .partners-section {
+      background: white;
+      border-bottom: 1px solid #e9ecef;
+      padding: 3.5rem 1.5rem;
+    }
+
+    .partners-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .partner-card {
+      background: var(--bg-color);
+      border: 1px solid #e2e8f0;
+      border-radius: var(--radius-md);
+      padding: 1.4rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: all 0.3s ease;
+      height: 110px;
+    }
+
+    .partner-card:hover {
+      border-color: var(--primary-color);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .partner-badge-icon {
+      font-size: 1.5rem;
+      margin-bottom: 6px;
+    }
+
+    .partner-name {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--primary-color);
+    }
+
+    .partner-role {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* ========================================================
+       5. 주요업무 카드 그리드 (bhban.kr singleWebsiteCard 스타일)
+       ======================================================== */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.8rem;
+    }
+
+    .feature-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid #edf2f7;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 1.8rem;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--accent-color);
+    }
+
+    .card-icon-wrap {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: #ebf5fb;
+      color: var(--accent-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 1.4rem;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    /* 카드 전체 호버 시 부드러운 확대 및 섀도우 */
+    .feature-card:hover .card-icon-wrap {
+      transform: scale(1.05);
+    }
+
+    /* 마우스를 아이콘(로고 박스)에 올렸을 때 배경을 빨간색으로 변경 */
+    .card-icon-wrap:hover,
+    .feature-card:hover .card-icon-wrap {
+      background: var(--secondary-color) !important;
+      color: white !important;
+      box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+    }
+
+    .card-category {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--secondary-color);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 0.4rem;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 0.8rem;
+    }
+
+    .card-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .card-list {
+      list-style: none;
+      font-size: 0.85rem;
+      color: #4a5568;
+      margin-top: auto;
+      border-top: 1px solid #f1f5f9;
+      padding-top: 1rem;
+    }
+
+    .card-list li {
+      margin-bottom: 0.45rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card-list li i {
+      color: #27ae60;
+      font-size: 0.8rem;
+    }
+
+    /* ========================================================
+       6. 열심히 공부하는 공무원 현장 갤러리 (Photo Stories)
+       ======================================================== */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .photo-card {
+      background: white;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid #edf2f7;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .photo-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .photo-img-wrapper {
+      position: relative;
+      height: 230px;
+      overflow: hidden;
+    }
+
+    .photo-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .photo-card:hover .photo-img {
+      transform: scale(1.06);
+    }
+
+    .photo-tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(44, 62, 80, 0.85);
+      backdrop-filter: blur(6px);
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 20px;
+    }
+
+    .photo-body {
+      padding: 1.6rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .photo-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+    }
+
+    .photo-text {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .photo-footer {
+      margin-top: 1.2rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--secondary-color);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* ========================================================
+       7. 찾아오는 길 섹션 (bhban.kr 스타일 탭 & 글래스 배너)
+       ======================================================== */
+    .tab-buttons-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .tab-container {
+      display: inline-flex;
+      background: #edf2f7;
+      padding: 6px;
+      border-radius: 35px;
+      gap: 6px;
+    }
+
+    .tab-btn {
+      border: none;
+      background: transparent;
+      padding: 10px 26px;
+      border-radius: 30px;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .tab-btn.active {
+      background: var(--primary-color);
+      color: white;
+      box-shadow: 0 4px 12px rgba(44, 62, 80, 0.25);
+    }
+
+    .campus-banner {
+      background: linear-gradient(135deg, var(--primary-color), #1a252f);
+      border-radius: var(--radius-md);
+      color: white;
+      padding: 2.5rem;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow-md);
+    }
+
+    .campus-badge {
+      display: inline-block;
+      background: var(--secondary-color);
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 0.8rem;
+      text-transform: uppercase;
+    }
+
+    .campus-title {
+      font-size: 2rem;
+      font-weight: 800;
+      color: white;
+      margin-bottom: 0.6rem;
+    }
+
+    .campus-address {
+      font-size: 1.05rem;
+      opacity: 0.9;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 1.2rem;
+    }
+
+    .campus-phones {
+      display: flex;
+      gap: 20px;
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      flex-wrap: wrap;
+    }
+
+    .transit-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .transit-card {
+      background: white;
+      border-radius: var(--radius-md);
+      padding: 1.8rem;
+      border: 1px solid #e2e8f0;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .transit-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 1.2rem;
+    }
+
+    .transit-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: #ebf5fb;
+      color: var(--accent-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+    }
+
+    .transit-header h4 {
+      margin: 0;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+
+    .transit-list {
+      list-style: none;
+      font-size: 0.9rem;
+      color: #4a5568;
+    }
+
+    .transit-list li {
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+
+    .transit-list strong {
+      display: block;
+      color: var(--text-color);
+      margin-bottom: 2px;
+    }
+
+    .alert-box {
+      background: #fdf2e9;
+      border-left: 4px solid #e67e22;
+      padding: 1rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      color: #7e4210;
+      margin-top: 0.8rem;
+    }
+
+    .map-action-bar {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: var(--radius-md);
+      padding: 1.2rem 1.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: gap;
+      gap: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .map-keyword {
+      font-size: 0.95rem;
+      color: #4a5568;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .map-btns {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn-naver {
+      background: #03c75a;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-naver:hover {
+      background: #02a54b;
+      color: white;
+    }
+
+    .btn-kakao {
+      background: #fee500;
+      color: #191919;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-kakao:hover {
+      background: #fada0a;
+      color: #191919;
+    }
+
+    /* ========================================================
+       8. 푸터 (bhban.kr 스타일 다크 모던 푸터)
+       ======================================================== */
+    footer {
+      background: var(--primary-color);
+      color: #94a3b8;
+      padding: 4rem 1.5rem 2.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.9rem;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+      font-weight: 800;
+      font-size: 1.25rem;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1.8rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      font-size: 0.85rem;
+      line-height: 1.7;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    /* Responsive */
+    @media (max-width: 868px) {
+      .navbar {
+        padding: 0 1.5rem;
+      }
+      .nav-links {
+        display: none;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .hero-title {
+        font-size: 2.3rem;
+      }
+      .hero-subtitle {
+        font-size: 1.05rem;
+      }
+      .profile-img {
+        width: 150px;
+        height: 150px;
+      }
+      .stat-divider {
+        display: none;
+      }
+      .hero-stats-banner {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .stat-item {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 네비게이션 바 (bhban.kr 스타일) -->
+  <nav class="navbar" aria-label="메인 메뉴">
+    <a href="#" class="navbar-brand">
+      <div class="brand-emblem">
+        <i class="fa-solid fa-graduation-cap"></i>
+      </div>
+      <div>
+        <span class="brand-text-sub">NHI KOREA</span>
+        <span class="brand-text-main">국가공무원인재개발원</span>
+      </div>
+    </a>
+
+    <button class="menu-toggle" id="mobile-menu-btn" aria-label="메뉴 열기">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about" class="nav-link">기관소개</a></li>
+      <li><a href="#duties" class="nav-link">주요업무</a></li>
+      <li><a href="#gallery" class="nav-link">교육현장</a></li>
+      <li><a href="#partners" class="nav-link">협력기관</a></li>
+      <li><a href="#locations" class="nav-link">찾아오는 길</a></li>
+      <li><a href="#locations" class="btn-contact">입교·방문문의</a></li>
+    </ul>
+  </nav>
+
+  <!-- 히어로 섹션 (bhban.kr Hero 스타일 완벽 벤치마킹) -->
+  <header class="hero">
+    <div class="hero-content">
+      <!-- bhban.kr 시그니처: 원형 프로필 이미지 (열심히 학습하는 한국 공무원 인재) -->
+      <div class="profile-img-container">
+        <img 
+          src="images/profile_korean.jpg" 
+          alt="공직 인재를 상징하는 열정적인 한국 공무원" 
+          class="profile-img"
+        />
+        <div class="profile-badge" title="인사혁신처 국가인재원">
+          <i class="fa-solid fa-award"></i>
+        </div>
+      </div>
+
+      <h1 class="hero-title">National HRD Institute</h1>
+      <p class="hero-subtitle">공직가치 · 미래역량 · 글로벌 리더십을 양성하는 대한민국 인재의 요람</p>
+
+      <!-- 소셜 & 관련 공식 링크 아이콘들 -->
+      <div class="hero-socials">
+        <a href="https://www.nhi.go.kr" target="_blank" rel="noopener noreferrer" class="social-icon" title="국가인재원 공식 누리집">
+          <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="https://e-learning.nhi.go.kr" target="_blank" rel="noopener noreferrer" class="social-icon" title="나라배움터 이러닝">
+          <i class="fa-solid fa-laptop-code"></i>
+        </a>
+        <a href="https://www.mpm.go.kr" target="_blank" rel="noopener noreferrer" class="social-icon" title="인사혁신처 공식 홈페이지">
+          <i class="fa-solid fa-landmark"></i>
+        </a>
+        <a href="https://www.youtube.com/@NHIKorea" target="_blank" rel="noopener noreferrer" class="social-icon" title="인재원 유튜브">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+
+      <!-- Hero Call-to-Action 버튼 -->
+      <div class="hero-buttons">
+        <a href="#duties" class="btn-hero btn-primary">
+          <i class="fa-solid fa-book-open"></i> 주요업무 안내
+        </a>
+        <a href="#locations" class="btn-hero btn-secondary">
+          <i class="fa-solid fa-map-location-dot"></i> 찾아오는 길 (진천·과천)
+        </a>
+      </div>
+
+      <!-- bhban.kr 핵심 시그니처: 글래스모피즘 Stats Banner -->
+      <div class="hero-stats-banner">
+        <a href="#about" class="stat-item">
+          <i class="fa-solid fa-building-columns stat-icon"></i>
+          <span class="stat-info">
+            <span class="stat-label">Foundation</span>
+            <span class="stat-value">1949</span>
+          </span>
+        </a>
+
+        <span class="stat-divider"></span>
+
+        <a href="#locations" class="stat-item">
+          <i class="fa-solid fa-location-dot stat-icon"></i>
+          <span class="stat-info">
+            <span class="stat-label">Campuses</span>
+            <span class="stat-value">2 (진천·과천)</span>
+          </span>
+        </a>
+
+        <span class="stat-divider"></span>
+
+        <a href="#duties" class="stat-item">
+          <i class="fa-solid fa-user-graduate stat-icon"></i>
+          <span class="stat-info">
+            <span class="stat-label">Trainees / Year</span>
+            <span class="stat-value">300,000+</span>
+          </span>
+        </a>
+
+        <span class="stat-divider"></span>
+
+        <a href="#partners" class="stat-item">
+          <i class="fa-solid fa-globe stat-icon"></i>
+          <span class="stat-info">
+            <span class="stat-label">Global Partners</span>
+            <span class="stat-value">50+ Nations</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 협력기관 로고 섹션 (새로 요청하신 실제 협력기관 CI) -->
+  <section id="partners" class="partners-section">
+    <div class="group-header" style="margin-bottom: 2rem;">
+      <span class="group-tag">Global & Domestic Network</span>
+      <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);">주요 협력 및 연계 기관</h3>
+    </div>
+
+    <div class="partners-grid">
+      <!-- 1. 인사혁신처 -->
+      <div class="partner-card">
+        <div class="partner-badge-icon" style="color: #c0392b;">
+          <i class="fa-solid fa-landmark-flag"></i>
+        </div>
+        <div class="partner-name">인사혁신처</div>
+        <div class="partner-role">중앙인사 관장 및 상급기관</div>
+      </div>
+
+      <!-- 2. 지방자치인재개발원 -->
+      <div class="partner-card">
+        <div class="partner-badge-icon" style="color: #27ae60;">
+          <i class="fa-solid fa-tree-city"></i>
+        </div>
+        <div class="partner-name">지방자치인재개발원</div>
+        <div class="partner-role">지방공무원 교육 동반기관</div>
+      </div>
+
+      <!-- 3. KDI 한국개발연구원 -->
+      <div class="partner-card">
+        <div class="partner-badge-icon" style="color: #2980b9;">
+          <i class="fa-solid fa-chart-line"></i>
+        </div>
+        <div class="partner-name">KDI 한국개발연구원</div>
+        <div class="partner-role">국가정책 및 거시연구 협력</div>
+      </div>
+
+      <!-- 4. 국립외교원 -->
+      <div class="partner-card">
+        <div class="partner-badge-icon" style="color: #8e44ad;">
+          <i class="fa-solid fa-passport"></i>
+        </div>
+        <div class="partner-name">국립외교원 (KNDA)</div>
+        <div class="partner-role">외교인재 양성 및 연수 협력</div>
+      </div>
+
+      <!-- 5. OECD 경제협력개발기구 -->
+      <div class="partner-card">
+        <div class="partner-badge-icon" style="color: #34495e;">
+          <i class="fa-solid fa-earth-americas"></i>
+        </div>
+        <div class="partner-name">OECD</div>
+        <div class="partner-role">공공거버넌스 국제교류</div>
+      </div>
+
+      <!-- 6. 나라배움터 -->
+      <div class="partner-card">
+        <div class="partner-badge-icon" style="color: #e67e22;">
+          <i class="fa-solid fa-display"></i>
+        </div>
+        <div class="partner-name">나라배움터</div>
+        <div class="partner-role">공공HRD 열린 학습 포털</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 기관 소개 섹션 (About) -->
+  <section id="about" class="section-container">
+    <div class="group-header">
+      <span class="group-tag">About NHI Korea</span>
+      <h2 class="group-title">공직사회의 미래를 디자인합니다</h2>
+      <p class="group-desc">국민에게 헌신하고 신뢰받는 대한민국 공직자를 양성하는 대한민국 최고 인재개발 플랫폼입니다.</p>
+    </div>
+
+    <div style="background: white; border-radius: var(--radius-md); padding: 3rem 2.5rem; border: 1px solid #e2e8f0; box-shadow: var(--shadow-sm); display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: center;">
+      <div>
+        <h3 style="font-size: 1.7rem; font-weight: 700; color: var(--primary-color); margin-bottom: 1.2rem; line-height: 1.3;">
+          올바른 공직가치 위에<br><span style="color: var(--secondary-color);">디지털 혁신역량</span>을 더하다
+        </h3>
+        <p style="color: var(--text-muted); font-size: 0.98rem; line-height: 1.8; margin-bottom: 1.5rem;">
+          국가공무원인재개발원은 1949년 출범 이래 국가의 대소사를 이끄는 동량들을 체계적으로 배출해 왔습니다. 
+          헌법정신에 기초한 충직한 공직윤리 확립은 물론, 생성형 AI와 빅데이터, 미래 행정환경에 능동적으로 대처할 수 있는 실천적 교육훈련을 제공합니다.
+        </p>
+        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 12px 18px; border-radius: 10px;">
+            <strong style="color: var(--primary-color); display: block; font-size: 1.1rem;">헌법적 공직가치</strong>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">청렴·공정·봉사 정신</span>
+          </div>
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 12px 18px; border-radius: 10px;">
+            <strong style="color: var(--primary-color); display: block; font-size: 1.1rem;">AI·데이터 행정</strong>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">스마트 직무역량 배양</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 교육생들이 진지하게 협업하는 사진 -->
+      <div style="border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-md);">
+        <img 
+          src="images/korean_study_laptop.jpg" 
+          alt="열정적으로 정책 과제를 연구하는 한국 공직자들" 
+          style="width: 100%; height: 320px; object-fit: cover; display: block;"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- 주요 업무 섹션 (bhban.kr의 Explore / 카드 그리드 스타일) -->
+  <section id="duties" style="background: white; border-top: 1px solid #edf2f7; border-bottom: 1px solid #edf2f7;">
+    <div class="section-container">
+      <div class="group-header">
+        <span class="group-tag">Core Missions</span>
+        <h2 class="group-title">국가공무원인재개발원 주요업무</h2>
+        <p class="group-desc">공직 생애주기 전반에 걸친 4대 핵심 직무 및 미래 역량 강화 프로그램</p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- 1. 리더십 & 계층교육 -->
+        <div class="feature-card">
+          <div class="card-icon-wrap" style="color: #2980b9; background: #ebf5fb;">
+            <i class="fa-solid fa-users-gear"></i>
+          </div>
+          <span class="card-category">계층별 직급 교육</span>
+          <h3 class="card-title">공무원 기본·역량 교육</h3>
+          <p class="card-desc">
+            5급 공채 합격자 대상 신임관리자과정부터 신임국장, 과장급 역량평가, 고위정책과정까지 단계별 리더십을 육성합니다.
+          </p>
+          <ul class="card-list">
+            <li><i class="fa-solid fa-circle-check"></i> 5급 신임관리자과정 (행정고시)</li>
+            <li><i class="fa-solid fa-circle-check"></i> 고위정책과정 및 국·과장급 역량평가</li>
+            <li><i class="fa-solid fa-circle-check"></i> 정책 기획 및 액션러닝(Action Learning)</li>
+          </ul>
+        </div>
+
+        <!-- 2. 공직가치 교육 -->
+        <div class="feature-card">
+          <div class="card-icon-wrap" style="color: #e74c3c; background: #fdeeed;">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <span class="card-category">공직철학 확립</span>
+          <h3 class="card-title">공직가치 및 청렴윤리</h3>
+          <p class="card-desc">
+            국민에게 신뢰받는 공직자상을 구현하기 위해 헌법정신, 애국심, 반부패 청렴교육 및 사회봉사 체험을 진행합니다.
+          </p>
+          <ul class="card-list">
+            <li><i class="fa-solid fa-circle-check"></i> 헌법정신 및 국가관·공직관 함양</li>
+            <li><i class="fa-solid fa-circle-check"></i> 반부패·이해충돌방지 실천 교육</li>
+            <li><i class="fa-solid fa-circle-check"></i> 현장 참여형 사회 봉사활동 연계</li>
+          </ul>
+        </div>
+
+        <!-- 3. 글로벌 연수 협력 -->
+        <div class="feature-card">
+          <div class="card-icon-wrap" style="color: #8e44ad; background: #f4ecf7;">
+            <i class="fa-solid fa-earth-asia"></i>
+          </div>
+          <span class="card-category">글로벌 네트워크</span>
+          <h3 class="card-title">국제교류협력 및 외국인 연수</h3>
+          <p class="card-desc">
+            개발도상국 및 해외 고위 공무원 초청 연수를 통해 한국의 우수한 행정 시스템(K-행정)을 세계에 널리 공유합니다.
+          </p>
+          <ul class="card-list">
+            <li><i class="fa-solid fa-circle-check"></i> 외국 공무원 대상 맞춤형 초청 연수</li>
+            <li><i class="fa-solid fa-circle-check"></i> 국내 공무원 글로벌 협상·어학 과정</li>
+            <li><i class="fa-solid fa-circle-check"></i> 과천 분원 글로벌 연수센터 운영</li>
+          </ul>
+        </div>
+
+        <!-- 4. 스마트러닝 & 에듀테크 -->
+        <div class="feature-card">
+          <div class="card-icon-wrap" style="color: #27ae60; background: #eafaf1;">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <span class="card-category">에듀테크 & R&D</span>
+          <h3 class="card-title">디지털 교육·나라배움터</h3>
+          <p class="card-desc">
+            AI 기반 맞춤형 학습 플랫폼 나라배움터를 운영하고, 첨단 교수기법과 공공HRD 트렌드를 연구·보급합니다.
+          </p>
+          <ul class="card-list">
+            <li><i class="fa-solid fa-circle-check"></i> 공공 이러닝 포털 나라배움터 운영</li>
+            <li><i class="fa-solid fa-circle-check"></i> AI·빅데이터 실무 적용 스마트 강의</li>
+            <li><i class="fa-solid fa-circle-check"></i> 공공 교육훈련기관 교수기법 컨설팅</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 한국인 공무원들이 열심히 공부하는 현장 갤러리 섹션 -->
+  <section id="gallery" class="section-container">
+    <div class="group-header">
+      <span class="group-tag">Active Training Life</span>
+      <h2 class="group-title">배움과 토론의 열정, 연수 현장</h2>
+      <p class="group-desc">국민의 더 나은 삶을 만들기 위해 밤낮없이 연구하고 토론하는 교육생들의 순간들</p>
+    </div>
+
+    <div class="gallery-grid">
+      <!-- 사진 1: 열띤 토론과 브레인스토밍 -->
+      <div class="photo-card">
+        <div class="photo-img-wrapper">
+          <img 
+            src="images/korean_meeting.jpg" 
+            alt="정책 토의 및 토론에 열중하는 한국 공무원들" 
+            class="photo-img"
+          />
+          <span class="photo-tag">정책 PBL 워크숍</span>
+        </div>
+        <div class="photo-body">
+          <div>
+            <h4 class="photo-title">집단지성 정책 솔루션 토론</h4>
+            <p class="photo-text">
+              각 부처의 신임 공직자들이 복잡한 민생 현안을 주제로 실천적 해결책을 도출하기 위해 치열하게 의견을 나눕니다.
+            </p>
+          </div>
+          <div class="photo-footer">
+            <i class="fa-solid fa-arrow-right"></i> 부처 간 칸막이 없는 협업 문화 실천
+          </div>
+        </div>
+      </div>
+
+      <!-- 사진 2: 노트북으로 집중해서 실습 및 문서 작성 -->
+      <div class="photo-card">
+        <div class="photo-img-wrapper">
+          <img 
+            src="images/korean_study_laptop.jpg" 
+            alt="데이터 분석 및 직무 실습에 집중하는 공직자" 
+            class="photo-img"
+          />
+          <span class="photo-tag">디지털 행정 실습</span>
+        </div>
+        <div class="photo-body">
+          <div>
+            <h4 class="photo-title">데이터 기반 과학적 행정 실습</h4>
+            <p class="photo-text">
+              행정 빅데이터와 지능형 툴을 직접 조작하며 근거에 기반한 정책 기획서와 법령 개선안을 작성하는 실무 훈련입니다.
+            </p>
+          </div>
+          <div class="photo-footer">
+            <i class="fa-solid fa-arrow-right"></i> 디지털 혁신 선도 인재 배양
+          </div>
+        </div>
+      </div>
+
+      <!-- 사진 3: 대형 강의실 및 세미나 경청 -->
+      <div class="photo-card">
+        <div class="photo-img-wrapper">
+          <img 
+            src="images/korean_seminar.jpg" 
+            alt="명사 특강을 집중해서 필기하고 경청하는 교육생들" 
+            class="photo-img"
+          />
+          <span class="photo-tag">공직가치 명사 특강</span>
+        </div>
+        <div class="photo-body">
+          <div>
+            <h4 class="photo-title">선배 공직자·석학과의 대화</h4>
+            <p class="photo-text">
+              국정 운영의 선배와 각계 석학들의 지혜를 경청하며 공직자로서 지녀야 할 소명과 국민 중심의 사고를 마음에 새깁니다.
+            </p>
+          </div>
+          <div class="photo-footer">
+            <i class="fa-solid fa-arrow-right"></i> 올바른 공직관과 소명의식 정립
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 찾아오는 길 섹션 (bhban.kr 스타일 탭 및 카드) -->
+  <section id="locations" style="background: white; border-top: 1px solid #edf2f7; padding: 5.5rem 1.5rem;">
+    <div style="max-w: 1200px; margin: 0 auto; max-width: 1200px;">
+      <div class="group-header">
+        <span class="group-tag">Location & Directions</span>
+        <h2 class="group-title">찾아오시는 길 안내</h2>
+        <p class="group-desc">
+          국가공무원인재개발원은 충북혁신도시의 <strong style="color: var(--primary-color);">진천 본원</strong>과 수도권의 <strong style="color: var(--primary-color);">과천 분원</strong>을 운영하고 있습니다. 참석하시는 교육 과정의 캠퍼스를 선택해 주세요.
+        </p>
+
+        <!-- 캠퍼스 선택 탭 버튼 (bhban.kr 스타일 탭 UI) -->
+        <div class="tab-buttons-wrap" style="margin-top: 2rem;">
+          <div class="tab-container">
+            <button id="tabJincheonBtn" onclick="switchCampus('jincheon')" class="tab-btn active">
+              <i class="fa-solid fa-building-flag" style="margin-right: 6px;"></i> 진천 본원 (충북혁신도시)
+            </button>
+            <button id="tabGwacheonBtn" onclick="switchCampus('gwacheon')" class="tab-btn">
+              <i class="fa-solid fa-city" style="margin-right: 6px;"></i> 과천 분원 (교육원로)
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1. 진천 본원 콘텐츠 -->
+      <div id="campusJincheon" class="campus-content">
+        <!-- 진천 본원 상단 배너 -->
+        <div class="campus-banner">
+          <span class="campus-badge">Main Campus</span>
+          <h3 class="campus-title">진천 본원 (진천캠퍼스)</h3>
+          <p class="campus-address">
+            <i class="fa-solid fa-location-dot" style="color: var(--secondary-color);"></i>
+            (27873) 충청북도 진천군 덕산읍 교학로 30 (충북혁신도시 내)
+          </p>
+          <div class="campus-phones">
+            <span><i class="fa-solid fa-phone" style="margin-right: 6px;"></i> <strong>대표전화:</strong> 043-931-6000 (주간)</span>
+            <span><i class="fa-solid fa-bell" style="margin-right: 6px;"></i> <strong>당직실:</strong> 043-931-6062 (야간)</span>
+          </div>
+        </div>
+
+        <!-- 교통수단 3종 카드 -->
+        <div class="transit-grid">
+          <!-- 대중교통 -->
+          <div class="transit-card">
+            <div class="transit-header">
+              <div class="transit-icon">
+                <i class="fa-solid fa-bus"></i>
+              </div>
+              <h4>대중교통 (시외·고속)</h4>
+            </div>
+            <ul class="transit-list">
+              <li>
+                <strong>충북혁신도시 버스터미널 하차</strong>
+                서울(동서울, 남부터미널)에서 약 1시간 30분 소요
+              </li>
+              <li>
+                <strong>터미널 ▷ 인재개발원 이동</strong>
+                도보 약 15분 또는 택시/시내버스 연계 (기본요금 거리)
+              </li>
+            </ul>
+            <div class="alert-box" style="background: #eafaf1; border-color: #27ae60; color: #1e6b37;">
+              💡 신임관리자과정 등 대규모 집합 교육 입교 시 터미널 연계 셔틀버스가 지원될 수 있습니다.
+            </div>
+          </div>
+
+          <!-- 승용차 -->
+          <div class="transit-card">
+            <div class="transit-header">
+              <div class="transit-icon" style="color: #27ae60; background: #eafaf1;">
+                <i class="fa-solid fa-car"></i>
+              </div>
+              <h4>승용차 이용 경로</h4>
+            </div>
+            <ul class="transit-list">
+              <li>
+                <strong>평택제천고속도로</strong>
+                금왕꽃동네IC ▷ 21번 국도(진천 방면) ▷ 신돈삼거리 ▷ 인재원
+              </li>
+              <li>
+                <strong>중부고속도로</strong>
+                진천IC ▷ 21번 국도(음성 방면) ▷ 신돈삼거리 ▷ 인재원
+              </li>
+            </ul>
+            <div class="alert-box" style="background: #ebf5fb; border-color: #3498db; color: #1b4f72;">
+              🅿️ 진천 본원은 교육생과 방문객을 위한 넉넉한 전용 주차장이 완비되어 있습니다.
+            </div>
+          </div>
+
+          <!-- 철도 KTX & 셔틀 -->
+          <div class="transit-card">
+            <div class="transit-header">
+              <div class="transit-icon" style="color: #e67e22; background: #fdf2e9;">
+                <i class="fa-solid fa-train"></i>
+              </div>
+              <h4>KTX 철도 & 통근 연계</h4>
+            </div>
+            <ul class="transit-list">
+              <li>
+                <strong>KTX 오송역 이용</strong>
+                오송역 하차 후 충북혁신도시행 직통 버스 또는 택시 연계
+              </li>
+              <li>
+                <strong>세종청사·수도권 통근 셔틀</strong>
+                정규 교육생을 대상으로 입퇴교 통근버스를 별도 운행합니다.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 지도 검색 바로가기 바 -->
+        <div class="map-action-bar">
+          <div class="map-keyword">
+            <i class="fa-solid fa-compass" style="color: var(--secondary-color); font-size: 1.2rem;"></i>
+            <span>내비게이션 검색어: <strong style="color: var(--primary-color);">"국가공무원인재개발원 진천본원"</strong></span>
+          </div>
+          <div class="map-btns">
+            <a href="https://map.naver.com/v5/search/%EA%B5%AD%EA%B0%80%EA%B3%B5%EB%AC%B4%EC%9B%90%EC%9D%B8%EC%9E%AC%EA%B0%9C%EB%B0%9C%EC%9B%90%20%EC%A7%84%EC%B2%9C" target="_blank" rel="noopener noreferrer" class="btn-naver">
+              <i class="fa-solid fa-map"></i> 네이버 지도
+            </a>
+            <a href="https://map.kakao.com/link/search/%EA%B5%AD%EA%B0%80%EA%B3%B5%EB%AC%B4%EC%9B%90%EC%9D%B8%EC%9E%AC%EA%B0%9C%EB%B0%9C%EC%9B%90%20%EC%A7%84%EC%B2%9C" target="_blank" rel="noopener noreferrer" class="btn-kakao">
+              <i class="fa-solid fa-location-arrow"></i> 카카오 맵
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. 과천 분원 콘텐츠 -->
+      <div id="campusGwacheon" class="campus-content hidden">
+        <!-- 과천 분원 상단 배너 -->
+        <div class="campus-banner" style="background: linear-gradient(135deg, #1f2937, #111827);">
+          <span class="campus-badge" style="background: var(--accent-color);">Gwacheon Campus</span>
+          <h3 class="campus-title">과천 분원 (과천캠퍼스)</h3>
+          <p class="campus-address">
+            <i class="fa-solid fa-location-dot" style="color: var(--secondary-color);"></i>
+            (13811) 경기도 과천시 교육원로 118 (구 중앙공무원교육원 부지)
+          </p>
+          <div class="campus-phones">
+            <span><i class="fa-solid fa-phone" style="margin-right: 6px;"></i> <strong>대표전화:</strong> 02-503-8020 (주간)</span>
+            <span><i class="fa-solid fa-bell" style="margin-right: 6px;"></i> <strong>당직실:</strong> 02-500-8620 (야간)</span>
+          </div>
+        </div>
+
+        <!-- 교통수단 3종 카드 -->
+        <div class="transit-grid">
+          <!-- 지하철 4호선 -->
+          <div class="transit-card">
+            <div class="transit-header">
+              <div class="transit-icon">
+                <i class="fa-solid fa-train-subway"></i>
+              </div>
+              <h4>지하철 4호선 이용</h4>
+            </div>
+            <ul class="transit-list">
+              <li>
+                <strong>정부과천청사역 6번 출구</strong>
+                역 하차 후 도보 15~20분 소요 또는 교육원 셔틀버스 이용
+              </li>
+              <li>
+                <strong>과천역 1번 출구</strong>
+                과천역 앞에서 택시 이용 시 약 5분 내외 소요
+              </li>
+            </ul>
+          </div>
+
+          <!-- 셔틀버스 -->
+          <div class="transit-card">
+            <div class="transit-header">
+              <div class="transit-icon" style="color: #27ae60; background: #eafaf1;">
+                <i class="fa-solid fa-bus-simple"></i>
+              </div>
+              <h4>청사역 셔틀버스</h4>
+            </div>
+            <ul class="transit-list">
+              <li>
+                <strong>탑승 위치</strong>
+                4호선 정부과천청사역 6번 출구 앞 지정 승강장
+              </li>
+              <li>
+                <strong>운행 시간대</strong>
+                아침 입교 및 퇴교 시간에 10~15분 간격 수시 운행
+              </li>
+            </ul>
+          </div>
+
+          <!-- 자가용 출입 제한 (경고) -->
+          <div class="transit-card" style="border-color: #f5c6cb;">
+            <div class="transit-header">
+              <div class="transit-icon" style="color: #e74c3c; background: #fdeeed;">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+              </div>
+              <h4>자가용 출입제한 (필독)</h4>
+            </div>
+            <p style="font-size: 0.9rem; color: #721c24; margin-bottom: 0.8rem; line-height: 1.6;">
+              과천 분원은 주차 면수가 협소하여 <strong>일반 교육생의 자가용 진입이 엄격히 통제</strong>됩니다.
+            </p>
+            <div class="alert-box" style="margin-top: 0;">
+              ※ 예외: 임산부, 장애인, 고위정책과정 등록 차량<br>
+              ※ 반드시 4호선 대중교통 및 전용 셔틀버스를 이용해 주시기 바랍니다.
+            </div>
+          </div>
+        </div>
+
+        <!-- 지도 검색 바로가기 바 -->
+        <div class="map-action-bar">
+          <div class="map-keyword">
+            <i class="fa-solid fa-compass" style="color: var(--secondary-color); font-size: 1.2rem;"></i>
+            <span>내비게이션 검색어: <strong style="color: var(--primary-color);">"국가공무원인재개발원 과천분원"</strong></span>
+          </div>
+          <div class="map-btns">
+            <a href="https://map.naver.com/v5/search/%EA%B5%AD%EA%B0%80%EA%B3%B5%EB%AC%B4%EC%9B%90%EC%9D%B8%EC%9E%AC%EA%B0%9C%EB%B0%9C%EC%9B%90%20%EA%B3%BC%EC%B2%9C" target="_blank" rel="noopener noreferrer" class="btn-naver">
+              <i class="fa-solid fa-map"></i> 네이버 지도
+            </a>
+            <a href="https://map.kakao.com/link/search/%EA%B5%AD%EA%B0%80%EA%B3%B5%EB%AC%B4%EC%9B%90%EC%9D%B8%EC%9E%AC%EA%B0%9C%EB%B0%9C%EC%9B%90%20%EA%B3%BC%EC%B2%9C" target="_blank" rel="noopener noreferrer" class="btn-kakao">
+              <i class="fa-solid fa-location-arrow"></i> 카카오 맵
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 푸터 (bhban.kr 스타일 다크 모던 푸터) -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <i class="fa-solid fa-graduation-cap" style="color: var(--secondary-color);"></i>
+          <span>국가공무원인재개발원</span>
+        </div>
+        <div class="footer-links">
+          <a href="#about">기관소개</a>
+          <a href="#duties">주요업무</a>
+          <a href="#gallery">교육현장</a>
+          <a href="#partners">협력기관</a>
+          <a href="#locations">찾아오는길</a>
+          <a href="https://e-learning.nhi.go.kr" target="_blank">나라배움터</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          <p><strong>진천본원:</strong> (27873) 충청북도 진천군 덕산읍 교학로 30 | 대표전화: 043-931-6000 | 당직실: 043-931-6062</p>
+          <p><strong>과천분원:</strong> (13811) 경기도 과천시 교육원로 118 | 대표전화: 02-503-8020 | 당직실: 02-500-8620</p>
+          <p style="margin-top: 8px; color: #64748b;">
+            대한민국 인사혁신처 소속 교육훈련기관으로서 국가공무원의 공직가치와 미래 혁신역량을 육성합니다.
+          </p>
+        </div>
+        <div style="color: #64748b; font-size: 0.8rem; white-space: nowrap;">
+          © 2026 NHI Korea. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 캠퍼스 탭 전환 & 모바일 메뉴 스크립트 -->
+  <script>
+    function switchCampus(campus) {
+      const jincheonContent = document.getElementById('campusJincheon');
+      const gwacheonContent = document.getElementById('campusGwacheon');
+      const jincheonBtn = document.getElementById('tabJincheonBtn');
+      const gwacheonBtn = document.getElementById('tabGwacheonBtn');
+
+      if (campus === 'jincheon') {
+        jincheonContent.classList.remove('hidden');
+        gwacheonContent.classList.add('hidden');
+        jincheonBtn.classList.add('active');
+        gwacheonBtn.classList.remove('active');
+      } else {
+        jincheonContent.classList.add('hidden');
+        gwacheonContent.classList.remove('hidden');
+        gwacheonBtn.classList.add('active');
+        jincheonBtn.classList.remove('active');
+      }
+    }
+
+    // 모바일 네비게이션 토글
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const navLinks = document.getElementById('nav-links');
+
+    menuBtn.addEventListener('click', () => {
+      if (navLinks.style.display === 'flex') {
+        navLinks.style.display = 'none';
+      } else {
+        navLinks.style.display = 'flex';
+        navLinks.style.flexDirection = 'column';
+        navLinks.style.position = 'absolute';
+        navLinks.style.top = '70px';
+        navLinks.style.left = '0';
+        navLinks.style.width = '100%';
+        navLinks.style.background = 'rgba(255, 255, 255, 0.98)';
+        navLinks.style.padding = '1.5rem';
+        navLinks.style.boxShadow = '0 10px 15px rgba(0,0,0,0.1)';
+        navLinks.style.gap = '1.2rem';
+      }
+    });
+  </script>
+</body>
+</html>
